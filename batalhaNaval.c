@@ -1,20 +1,22 @@
 #include <stdio.h>
 
 int main() {
-    // Nível Novato – Tabuleiro 5x5
-    int tabuleiro_novato[5][5] = {0};
+    // ============================
+    // NÍVEL AVENTUREIRO
+    // ============================
 
-    // Navio vertical (coluna fixa, linha variável)
-    int navio_vertical_x = 1;
-    int navio_vertical_y_start = 0;
-    int navio_vertical_tamanho = 3;
+    // Etapa 1: Criação do tabuleiro 10x10
+    int tabuleiro[10][10] = {0}; // 0 = espaço vazio
 
-    // Navio horizontal (linha fixa, coluna variável)
-    int navio_horizontal_y = 4;
-    int navio_horizontal_x_start = 2;
-    int navio_horizontal_tamanho = 2;
-
-    // Posiciona navio vertical
+    // Etapa 2: Exibição inicial do tabuleiro vazio
+    printf("Tabuleiro 10x10 (inicial):\n");
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {
+            printf("%d ", tabuleiro[i][j]);
+        }
+        printf("\n");
+    }
+    
     printf("Coordenadas do navio vertical:\n");
     for (int i = 0; i < navio_vertical_tamanho; i++) {
         int y = navio_vertical_y_start + i;
@@ -22,7 +24,6 @@ int main() {
         printf("(%d, %d)\n", navio_vertical_x, y);
     }
 
-    // Posiciona navio horizontal
     printf("\nCoordenadas do navio horizontal:\n");
     for (int i = 0; i < navio_horizontal_tamanho; i++) {
         int x = navio_horizontal_x_start + i;
@@ -32,6 +33,26 @@ int main() {
 
     // Nível Aventureiro – Tabuleiro 10x10
     int tabuleiro_aventureiro[10][10] = {0};
+
+    // Navio 1 – Vertical
+    for (int i = 0; i < 3; i++) {
+        tabuleiro_aventureiro[1 + i][2] = 3;
+    }
+
+    // Navio 2 – Horizontal
+    for (int i = 0; i < 4; i++) {
+        tabuleiro_aventureiro[7][4 + i] = 3;
+    }
+
+    // Navio 3 – Diagonal principal (↘)
+    for (int i = 0; i < 3; i++) {
+        tabuleiro_aventureiro[2 + i][2 + i] = 3;
+    }
+
+    // Navio 4 – Diagonal secundária (↙)
+    for (int i = 0; i < 3; i++) {
+        tabuleiro_aventureiro[5 + i][4 - i] = 3;
+    }
 
     return 0;
 }
