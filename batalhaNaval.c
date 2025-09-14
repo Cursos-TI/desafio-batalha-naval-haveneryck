@@ -31,7 +31,7 @@ int main() {
     }
 
     // Etapa 3: Exibição do tabuleiro com navios
-    printf("Tabuleiro 10x10 com navios posicionados:\n");
+    printf("=== Tabuleiro 10x10 ===\n");
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 10; j++) {
             printf("%d ", tabuleiro[i][j]);
