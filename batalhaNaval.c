@@ -15,5 +15,17 @@ int main() {
     int navio_horizontal_x_start = 2;
     int navio_horizontal_tamanho = 2;
 
+    // Posiciona navio vertical no tabuleiro
+    for (int i = 0; i < navio_vertical_tamanho; i++) {
+        int y = navio_vertical_y_start + i;
+        tabuleiro[y][navio_vertical_x] = 1;
+    }
+
+    // Posiciona navio horizontal no tabuleiro
+    for (int i = 0; i < navio_horizontal_tamanho; i++) {
+        int x = navio_horizontal_x_start + i;
+        tabuleiro[navio_horizontal_y][x] = 1;
+    }
+
     return 0;
 }
