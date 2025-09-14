@@ -16,15 +16,19 @@ int main() {
     int navio_horizontal_tamanho = 2;
 
     // Posiciona navio vertical no tabuleiro
+    printf("Coordenadas do navio vertical:\n");
     for (int i = 0; i < navio_vertical_tamanho; i++) {
         int y = navio_vertical_y_start + i;
         tabuleiro[y][navio_vertical_x] = 1;
+        printf("(%d, %d)\n", navio_vertical_x, y);
     }
 
     // Posiciona navio horizontal no tabuleiro
+    printf("\nCoordenadas do navio horizontal:\n");
     for (int i = 0; i < navio_horizontal_tamanho; i++) {
         int x = navio_horizontal_x_start + i;
         tabuleiro[navio_horizontal_y][x] = 1;
+        printf("(%d, %d)\n", x, navio_horizontal_y);
     }
 
     return 0;
