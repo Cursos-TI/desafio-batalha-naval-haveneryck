@@ -1,3 +1,43 @@
+# Batalha Naval em C
+
+Projeto desenvolvido como parte de um desafio acadêmico da Universidade Estácio de Sá, durante o curso de Engenharia De Software. Apesar de meu foco atual ser em Java, encarei o desafio em linguagem C para explorar lógica de programação e estrutura de dados.
+
+## 🧩 Níveis implementados
+
+- **Novato:** Tabuleiro fixo, ataque único por rodada
+- **Aventureiro:** Tabuleiro aleatório, múltiplos ataques
+- **Mestre:** Validação de coordenadas, fim de jogo com contagem de acertos
+
+## 🚀 Funcionalidades
+
+- Geração de tabuleiro
+- Registro de ataques
+- Validação de entrada
+- Contador de acertos
+- Mensagens de feedback para o jogador
+
+## 📚 Aprendizados
+
+- Manipulação de matrizes em C
+- Uso de `rand()` para gerar posições aleatórias
+- Controle de fluxo com `while`, `if`, e `for`
+- Organização de commits para refletir evolução do projeto
+
+## 👨‍💻 Autor
+
+**Vinicius Oliveira Brito (haveneryck)**   
+Estudante de Java, explorando outras linguagens e desafios para ampliar conhecimento em desenvolvimento de software.
+
+---
+
+## 📄 Instruções originais do desafio (Cursos-TI)
+
+> *Abaixo estão as instruções originais fornecidas pela Universidade Estácio de Sá para o desenvolvimento do projeto.*
+
+
+
+
+
 # ⚠️ Importante!!!
 Você pode escolher qualquer um dos desafios para desenvolver. Sinta-se à vontade para começar pelo desafio que mais lhe interessa.
 
